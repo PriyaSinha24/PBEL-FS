@@ -413,3 +413,60 @@ console.log(arr);
 // Output:
 // ["A", "Z", "C"]
 
+
+// ===============================
+// Challenge Questions
+
+
+// Question 1
+// Create an array of 10 elements and replace every even index with "JavaScript".
+
+let arr= [1,2,3,4,5,6,7,8,9,10];
+
+for (let i = 0; i < arr.length; i++) {
+    if (i % 2 == 0) {
+        arr[i] = "JavaScript";
+    }
+}
+
+console.log(arr);
+
+// Output:
+// [
+//   'JavaScript', 2,
+//   'JavaScript', 4,
+//   'JavaScript', 6,
+//   'JavaScript', 8,
+//   'JavaScript', 10
+// ]
+
+
+
+// Question 2
+// Create three variables: name, age, and city, and print a complete sentence using them.
+
+let studentName = "Priya";
+let studentAge = 22;
+let studentCity = "Guwahati";
+
+console.log("My name is " + studentName + ". I am " + studentAge + " years old and I live in " + studentCity + ".");
+
+// Output:
+// My name is Priya. I am 22 years old and I live in Guwahati.
+
+
+// Question 3
+// Create an array with mixed data types and count the number of elements without using length.
+
+let mixedArray = ["Priya", 22, true, null, undefined];
+
+let count = 0;
+
+for (let item of mixedArray) {
+    count++;
+}
+
+console.log("Number of elements =", count);
+
+// Output:
+// Number of elements = 5
